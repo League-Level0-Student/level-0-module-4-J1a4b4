@@ -18,13 +18,22 @@ public class SleepyHead {
          * Ask the user for these values using a confirm dialog like the one below
          * JOptionPane.showConfirmDialog(null, "Is it a weekday?", "Sleepy Head", JOptionPane.YES_NO_OPTION);
          */
-    
-
-
+   int answerI = JOptionPane.showConfirmDialog(null, "Is is a weekday?", "Sleepy Head", JOptionPane.YES_NO_OPTION);
+   int answerII = JOptionPane.showConfirmDialog(null, "Is is a vacation day?", "Sleepy Head", JOptionPane.YES_NO_OPTION);
+System.out.println(answerI + ", " + answerII);
+   if(answerI==0) {
+	if(answerII==0) {
+		JOptionPane.showMessageDialog(null, "You can sleep in today.");
+	}else {
+		JOptionPane.showMessageDialog(null, "WAKE UP!!!");
+	}
+}else {
+	JOptionPane.showMessageDialog(null, "You can sleep in today.");
+}
         /*
-         * Print “sleep in�? if it is a vacation or a weekend. If it’s a weekday,
-         * print “get up lazybones!�? If it is a weekday, and we are on vacation,
-         * print “sleep in�?.
+         * Print “sleep in�? if it is a vacation or a weekend. If it’s a weekday,
+         * print “get up lazybones!�? If it is a weekday, and we are on vacation,
+         * print “sleep in�?.
          */
     }
 }
